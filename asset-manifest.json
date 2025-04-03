@@ -1,0 +1,28 @@
+{
+  "files": {
+    "main.css": "/siteAppleGit/static/css/main.bd935bc0.css",
+    "main.js": "/siteAppleGit/static/js/main.5939502e.js",
+    "static/media/myriadproblack.otf": "/siteAppleGit/static/media/myriadproblack.e730e1b19ca276c646dc.otf",
+    "static/media/myriadprobold.ttf": "/siteAppleGit/static/media/myriadprobold.ba6deb5147fa6e225f9b.ttf",
+    "static/media/myriadproregular.ttf": "/siteAppleGit/static/media/myriadproregular.c59859cec849233be7f8.ttf",
+    "static/media/myriadprolight.otf": "/siteAppleGit/static/media/myriadprolight.b0bb7658963c5d720ddd.otf",
+    "static/media/macShop.svg": "/siteAppleGit/static/media/macShop.d6551e5742eaef6223f4c908a9bc68ac.svg",
+    "static/media/macbookPro.svg": "/siteAppleGit/static/media/macbookPro.1ade4ac6bb09c74c963b5ec153f510d6.svg",
+    "static/media/macOs.svg": "/siteAppleGit/static/media/macOs.2a925b7f9323693f5877136940714a2a.svg",
+    "static/media/macCompare.svg": "/siteAppleGit/static/media/macCompare.68db5d7c79a2f745e3e26e75bed0bb93.svg",
+    "static/media/macPro.svg": "/siteAppleGit/static/media/macPro.8008aa5d79f40e509cae23f762138e88.svg",
+    "index.html": "/siteAppleGit/index.html",
+    "static/media/macbookAir.svg": "/siteAppleGit/static/media/macbookAir.29842919cadab85a09aed54bbf0809f2.svg",
+    "static/media/macAcessories.svg": "/siteAppleGit/static/media/macAcessories.44450b03f219fff7dffa5f67048a247a.svg",
+    "static/media/macDisplays.svg": "/siteAppleGit/static/media/macDisplays.5709c8d8937ad2a7e12a90d98131be28.svg",
+    "static/media/iMac.svg": "/siteAppleGit/static/media/iMac.e180c7c6add187e9787af89ba858b985.svg",
+    "static/media/macStudio.svg": "/siteAppleGit/static/media/macStudio.b1dc1177c7e1883cd2a19aaed3cfa5d9.svg",
+    "static/media/macMini.svg": "/siteAppleGit/static/media/macMini.5d22d5c40ff1a70c6dd4080d064a4ddb.svg",
+    "main.bd935bc0.css.map": "/siteAppleGit/static/css/main.bd935bc0.css.map",
+    "main.5939502e.js.map": "/siteAppleGit/static/js/main.5939502e.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.bd935bc0.css",
+    "static/js/main.5939502e.js"
+  ]
+}
