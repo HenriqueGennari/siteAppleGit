@@ -1,10 +1,27 @@
 import React from 'react';
 import './fonts.css';
 import { useEffect } from "react";
-import {Header, ItemHeader, TextHeader, OptionProductsApple, ItemOptionProduct, ImageOpttionProductApple, TextOptionProductApple, SpanNewOptionProductApple} from "./AppStyled";
+
+
+import {Header,
+  ItemHeader,
+  TextHeader,
+  OptionProductsApple,
+  ItemOptionProduct, 
+  ImageOpttionProductApple,
+  TextOptionProductApple,
+  SpanNewOptionProductApple,
+  AppleEducationBlock,
+  BannerArea,
+  PurschaseButton,
+  BannerAreaButtons} 
+  
+  from "./AppStyled";
+
+
 import {FontAwesomeIcon} from "@fortawesome/react-fontawesome"
 import {faApple} from "@fortawesome/free-brands-svg-icons"
-import {faMagnifyingGlass, faBagShopping} from "@fortawesome/free-solid-svg-icons"
+import {faMagnifyingGlass, faBagShopping, faChevronRight} from "@fortawesome/free-solid-svg-icons"
 
 import iMac from "./assets/images/iMac.svg";
 import macAcessories from './assets/images/macAcessories.svg'
@@ -18,6 +35,7 @@ import macShop from './assets/images/macShop.svg'
 import macStudio from './assets/images/macStudio.svg'
 import macbookPro from './assets/images/macbookPro.svg'
 import macPro from './assets/images/macPro.svg'
+import macbook from './assets/images/macbook.svg'
 
 
 function App() {
@@ -84,18 +102,18 @@ function App() {
 
       </Header>
 
-      <OptionProductsApple>
+      <OptionProductsApple>  {/*Icones abaixo do Header do site*/}
         
         <ItemOptionProduct>
           <ImageOpttionProductApple src={macbookAir} widthImage='88px'/>
           <TextOptionProductApple>MacBook Air</TextOptionProductApple>
-          <SpanNewOptionProductApple>New</SpanNewOptionProductApple>
+          <SpanNewOptionProductApple type="span-new-option">New</SpanNewOptionProductApple>
         </ItemOptionProduct>
 
         <ItemOptionProduct>
           <ImageOpttionProductApple src={macbookPro} widthImage='88px'/>
           <TextOptionProductApple>MacBook Pro</TextOptionProductApple>
-          <SpanNewOptionProductApple>New</SpanNewOptionProductApple>
+          <SpanNewOptionProductApple type="span-new-option">New</SpanNewOptionProductApple>
         </ItemOptionProduct>
 
         <ItemOptionProduct>
@@ -124,7 +142,7 @@ function App() {
         </ItemOptionProduct>
 
         <ItemOptionProduct>
-          <ImageOpttionProductApple src={macDisplays} widthImage='75px'/>
+          <ImageOpttionProductApple src={macDisplays} widthImage='81px'/>
           <TextOptionProductApple>MacBook Air</TextOptionProductApple>
         </ItemOptionProduct>
 
@@ -134,17 +152,45 @@ function App() {
         </ItemOptionProduct>
 
         <ItemOptionProduct>
-          <ImageOpttionProductApple src={macOs}/>
+          <ImageOpttionProductApple src={macOs} widthImage='42px'/>
           <TextOptionProductApple>MacBook Air</TextOptionProductApple>
         </ItemOptionProduct>
 
         <ItemOptionProduct>
-          <ImageOpttionProductApple src={macShop} widthImage='95px'/>
+          <ImageOpttionProductApple src={macShop} widthImage='120px'/>
           <TextOptionProductApple>MacBook Air</TextOptionProductApple>
         </ItemOptionProduct>
 
       </OptionProductsApple>
+
       
+      
+      <AppleEducationBlock>  {/*Texto abaixo dos itens */}
+          <p>Economize na compra do MacBookAir e do MacPro de 13 polegadas na Apple Store Educacional* <a href="">Comprar <FontAwesomeIcon style={{fontSize : 9}} icon={faChevronRight}/></a>
+          </p>
+      </AppleEducationBlock>
+
+
+      <BannerArea>  {/*Área do MacBookAir, titulos, p, imagem, button*/}
+        <SpanNewOptionProductApple>Novo</SpanNewOptionProductApple>
+        <h1>MacBookAir</h1>
+        <h2>Livre , leve e voa.</h2>
+        <p>A partir de R$ 13.999</p>
+
+        <BannerAreaButtons>
+          <PurschaseButton background="#0071e3" color="white">
+            Comprar
+          </PurschaseButton>
+
+          <PurschaseButton background="transperant" color="blue" underline>
+            Saiba mais <FontAwesomeIcon style={{fontSize : 11 , marginLeft : 5}} icon={faChevronRight}/>
+          </PurschaseButton>
+        </BannerAreaButtons>
+
+        <ImageOpttionProductApple src= {macbook} widthImage='450px' marginTop='75px' ></ImageOpttionProductApple>
+      </BannerArea>
+
+
     </div>
   );
 }
