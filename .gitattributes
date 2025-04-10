@@ -1,0 +1,11 @@
+# Força LF como final de linha para todos os arquivos de texto
+* text=auto eol=lf
+
+# Você pode especificar tipos de arquivos se quiser:
+*.cs text eol=lf
+*.py text eol=lf
+*.html text eol=lf
+*.css text eol=lf
+*.js text eol=lf
+*.ts text eol=lf
+*.tsx text eol=lf
