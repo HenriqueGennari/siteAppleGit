@@ -1,7 +1,9 @@
 {
   "files": {
     "main.css": "/siteAppleGit/static/css/main.bd935bc0.css",
-    "main.js": "/siteAppleGit/static/js/main.5939502e.js",
+    "main.js": "/siteAppleGit/static/js/main.b93da76c.js",
+    "static/media/macbook.svg": "/siteAppleGit/static/media/macbook.0d703c8d76783b131cc3507d1a55fee1.svg",
+    "static/media/macpro.jpeg": "/siteAppleGit/static/media/macpro.61642063736b7b077dc5.jpeg",
     "static/media/myriadproblack.otf": "/siteAppleGit/static/media/myriadproblack.e730e1b19ca276c646dc.otf",
     "static/media/myriadprobold.ttf": "/siteAppleGit/static/media/myriadprobold.ba6deb5147fa6e225f9b.ttf",
     "static/media/myriadproregular.ttf": "/siteAppleGit/static/media/myriadproregular.c59859cec849233be7f8.ttf",
@@ -19,10 +21,10 @@
     "static/media/macStudio.svg": "/siteAppleGit/static/media/macStudio.b1dc1177c7e1883cd2a19aaed3cfa5d9.svg",
     "static/media/macMini.svg": "/siteAppleGit/static/media/macMini.5d22d5c40ff1a70c6dd4080d064a4ddb.svg",
     "main.bd935bc0.css.map": "/siteAppleGit/static/css/main.bd935bc0.css.map",
-    "main.5939502e.js.map": "/siteAppleGit/static/js/main.5939502e.js.map"
+    "main.b93da76c.js.map": "/siteAppleGit/static/js/main.b93da76c.js.map"
   },
   "entrypoints": [
     "static/css/main.bd935bc0.css",
-    "static/js/main.5939502e.js"
+    "static/js/main.b93da76c.js"
   ]
 }
