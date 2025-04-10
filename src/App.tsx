@@ -14,7 +14,8 @@ import {Header,
   AppleEducationBlock,
   BannerArea,
   PurschaseButton,
-  BannerAreaButtons} 
+  BannerAreaButtons,
+  BannerMacPro} 
   
   from "./AppStyled";
 
@@ -36,6 +37,10 @@ import macStudio from './assets/images/macStudio.svg'
 import macbookPro from './assets/images/macbookPro.svg'
 import macPro from './assets/images/macPro.svg'
 import macbook from './assets/images/macbook.svg'
+import macprobackblack from './assets/images/macproBACKBlack.svg'
+import macpro from './assets/images/macpro.jpeg';
+
+
 
 
 function App() {
@@ -107,13 +112,13 @@ function App() {
         <ItemOptionProduct>
           <ImageOpttionProductApple src={macbookAir} widthImage='88px'/>
           <TextOptionProductApple>MacBook Air</TextOptionProductApple>
-          <SpanNewOptionProductApple type="span-new-option">New</SpanNewOptionProductApple>
+          <SpanNewOptionProductApple marginTop="76px" type="span-new-option">New</SpanNewOptionProductApple>
         </ItemOptionProduct>
 
         <ItemOptionProduct>
           <ImageOpttionProductApple src={macbookPro} widthImage='88px'/>
           <TextOptionProductApple>MacBook Pro</TextOptionProductApple>
-          <SpanNewOptionProductApple type="span-new-option">New</SpanNewOptionProductApple>
+          <SpanNewOptionProductApple marginTop="76px" type="span-new-option">New</SpanNewOptionProductApple>
         </ItemOptionProduct>
 
         <ItemOptionProduct>
@@ -189,6 +194,26 @@ function App() {
 
         <ImageOpttionProductApple src= {macbook} widthImage='450px' marginTop='75px' ></ImageOpttionProductApple>
       </BannerArea>
+
+
+      <BannerMacPro>
+      <SpanNewOptionProductApple marginTop='45px'>Novo</SpanNewOptionProductApple>
+        <h1>MacBook Pro de 13 Pol.</h1>
+        <h2>Pro em qualquer lugar</h2>
+        <p>A partir de R$ 15.299</p>
+
+        <BannerAreaButtons>
+          <PurschaseButton background="#0071e3" color="white">
+            Comprar
+          </PurschaseButton>
+
+          <PurschaseButton background="black" color="blue" underline>
+            Saiba mais <FontAwesomeIcon style={{fontSize : 11 , marginLeft : 5}} icon={faChevronRight}/>
+          </PurschaseButton>
+        </BannerAreaButtons>
+
+        <ImageOpttionProductApple src= {macpro} widthImage='850px' marginTop='75px' style={{background : "white"}}></ImageOpttionProductApple>
+      </BannerMacPro>
 
 
     </div>
