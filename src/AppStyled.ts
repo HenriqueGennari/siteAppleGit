@@ -8,6 +8,7 @@ interface ImageOpttionProductApple{
 interface SpanNewOptionProductApple {
     marginTop?: string;
     type ?: string;
+    fontSize ?: string;
 
 }
 
@@ -15,6 +16,15 @@ interface PurschaseButton{
     background : string;
     color : string;
     underline ?: boolean;
+}
+
+type OptionType = {
+    selected ?: boolean;
+    width ?: string;
+    rigth ?: boolean;
+}
+interface ColorOptionMacType {
+    background : string;
 }
 
 export const Header = styled.div`
@@ -36,16 +46,15 @@ export const Header = styled.div`
 export const ItemHeader = styled.div`
     display: flex;
     justify-content: center;
-
 `;
 
 export const TextHeader = styled.div`
-    font-size : 12px;
-    color : #f5f5f7;
+    font-size: 12px;
+    color: #f5f5f7;
     font-family: 'MyriadProLight';
     opacity: .8;
     cursor: pointer;
-    letter-spacing: -.01rem
+    letter-spacing: -.01rem;
 `;
 
 export const OptionProductsApple = styled.div`
@@ -76,7 +85,7 @@ export const TextOptionProductApple = styled.a`
 export const SpanNewOptionProductApple = styled.span<SpanNewOptionProductApple>`
     color : #f56300;
     font-family: 'MyriadProRegular';
-    font-size: ${(props) => props.type === "span-new-option" ? '10px' : '20px'};
+    font-size: ${(props) => props.fontSize};
     font-weight: ${(props) => props.type === "span-new-option" ? '400' : 'bold'};
     position: ${(props) => props.type === "span-new-option" ? 'absolute' : 'relative'};
     margin-top: ${(props) => props.marginTop};
@@ -201,4 +210,82 @@ export const BannerMacPro = styled.div`
     }
 
 `;
+export const SelectMac = styled.div`
+    padding: 100px 30px;
+    height: 800px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 
+    h1{
+        font-size: 35px;
+        color: black;
+        font-family: 'MyriadProRegular';
+        font-weight: bold;
+        margin-top: 2px;
+    }
+`;
+
+export const OptionsType = styled.div`
+    width: 200px;
+    height: 40px;
+    border-bottom: 2px solid #d2d2d7;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-start;
+`;
+export const Optiontype = styled.div<OptionType>`
+    display: flex;
+    align-items: flex-start;
+    height: 40px;
+    color: ${(props) => props.selected ? '#1d1d1f' : ' #6e6e73' };
+    font-family: 'MyriadProRegular';
+    font-size: 18px;
+    width: ${(props) => props.width};
+    text-aling: ${(props) => props.rigth ? 'right' : 'left'}
+    height: 100%;
+    border-bottom: 1px solid ${(props) => props.selected? ' #6e6e73': '#d2d2d7' };
+    cursor: pointer;
+`;
+
+export const OptionsMac = styled.div`
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+`;
+export const OptionMac = styled.div`
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 70px; 
+
+    h1 {
+        font-size: 25px;
+        text-align: center;
+        margin-top: -1px;
+    }
+`;
+export const OptionMacImage = styled.img`
+    width: 167px;
+    height: 125px;
+`;
+
+export const ColorsOptionsMac = styled.div`
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    padding-top: 20px;
+    gap: 5px;
+    width: 200px;
+`;
+export const ColorOptionMac = styled.div<ColorOptionMacType>`
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    background-color: ${(props) => props.background};
+`;

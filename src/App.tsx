@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState } from 'react';
 import './fonts.css';
 import { useEffect } from "react";
 
@@ -15,7 +15,16 @@ import {Header,
   BannerArea,
   PurschaseButton,
   BannerAreaButtons,
-  BannerMacPro} 
+  BannerMacPro,
+  SelectMac,
+  OptionsType,
+  Optiontype,
+  OptionMac,
+  OptionsMac,
+  OptionMacImage,
+  ColorsOptionsMac,
+  ColorOptionMac,
+} 
   
   from "./AppStyled";
 
@@ -37,13 +46,26 @@ import macStudio from './assets/images/macStudio.svg'
 import macbookPro from './assets/images/macbookPro.svg'
 import macPro from './assets/images/macPro.svg'
 import macbook from './assets/images/macbook.svg'
-import macprobackblack from './assets/images/macproBACKBlack.svg'
 import macpro from './assets/images/macpro.jpeg';
+import macBookImage from './assets/images/macBookImage.png'
 
 
 
 
 function App() {
+
+  const [optionMac, setOptionMac] = useState<boolean>(true)
+
+
+  //forma para que, ao clicar em um, o outro não mude
+
+  /*const [selectedOption, setSelectedOption] = useState<'notebook' | 'desktop'>('notebook'); //dizendo que selectedOption pode ser ou 'notebook' ou 'desktop', se declarasse <string> seria permissivo
+    <OptionsType>
+    <Optiontype onClick={() => setSelectedOption('notebook')} selected={selectedOption === "notebook"} width='75px'> Notebook
+    </Optiontype>
+    <Optiontype onClick={() => setSelectedOption('desktop')} selected={selectedOption === "desktop"}>DeskTop</Optiontype>*/
+
+
 
   return (
     <div>
@@ -212,10 +234,79 @@ function App() {
           </PurschaseButton>
         </BannerAreaButtons>
 
-        <ImageOpttionProductApple src= {macpro} widthImage='850px' marginTop='75px' style={{background : "white"}}></ImageOpttionProductApple>
+        <ImageOpttionProductApple src= {macpro} widthImage='900px' marginTop='15px'></ImageOpttionProductApple>
       </BannerMacPro>
 
+      <SelectMac>`
+        <h1>Qual o Mac ideal para você?</h1>
+        <OptionsType>
+          <Optiontype onClick={() => setOptionMac(!optionMac)} selected={optionMac} width='75px' style={{justifyContent: 'flex-start'}}> Notebook
+          </Optiontype>
 
+          <Optiontype onClick={() => setOptionMac(!optionMac)} selected={!optionMac} width='60px'>
+          DeskTop
+          </Optiontype>
+        </OptionsType>
+
+        <OptionsMac>
+          <OptionMac>
+            <OptionMacImage src={macBookImage} alt="" />
+
+            <ColorsOptionsMac>
+              <ColorOptionMac background="#565353"></ColorOptionMac>
+              <ColorOptionMac background ="#a58236"></ColorOptionMac>
+              <ColorOptionMac background ="#d8d8d8"></ColorOptionMac>
+            </ColorsOptionsMac>
+
+            <SpanNewOptionProductApple fontSize='11px' marginTop='21px'></SpanNewOptionProductApple>
+            {/*Esse componente e o último vão receber o SpanNewOptionProductApple sem nenhum texto para alinhar eles na mesma posicão que os outros, para isso também mexemos no margin top.*/}
+
+            <h1>MacBooKAir <br /><br /></h1> {/*gambiarra*/}
+          </OptionMac>
+
+          <OptionMac>
+            <OptionMacImage src={macBookImage} alt="" />
+
+            <ColorsOptionsMac>
+              <ColorOptionMac background="#565353"></ColorOptionMac>
+              <ColorOptionMac background ="#a58236"></ColorOptionMac>
+              <ColorOptionMac background ="#d8d8d8"></ColorOptionMac>
+              <ColorOptionMac background ="#9e5858"></ColorOptionMac>
+            </ColorsOptionsMac>
+
+            <SpanNewOptionProductApple fontSize='11px' marginTop='10px'>Novo</SpanNewOptionProductApple>
+
+            <h1>MacBooKAir <br /><br /></h1> {/*gambiarra*/}
+          </OptionMac>
+
+          <OptionMac>
+            <OptionMacImage src={macBookImage} alt="" />
+
+            <ColorsOptionsMac>
+              <ColorOptionMac background ="#a58236"></ColorOptionMac>
+              <ColorOptionMac background ="#d8d8d8"></ColorOptionMac>
+            </ColorsOptionsMac>
+
+            <SpanNewOptionProductApple fontSize = "11px" marginTop='10px'>Novo</SpanNewOptionProductApple>
+
+            <h1>Macbook Pro <br /> de 13 pol.</h1>
+          </OptionMac>
+
+          <OptionMac>
+            <OptionMacImage src={macBookImage} alt="" />
+
+            <ColorsOptionsMac>
+              <ColorOptionMac background="#565353"></ColorOptionMac>
+              <ColorOptionMac background ="#d8d8d8"></ColorOptionMac>
+            </ColorsOptionsMac>
+
+            <SpanNewOptionProductApple fontSize='11px' marginTop='21px'></SpanNewOptionProductApple>
+            
+            <h1>Macbook Pro <br /> de 13 e 16 pol.</h1>
+          </OptionMac>
+        </OptionsMac>
+
+      </SelectMac>
     </div>
   );
 }
