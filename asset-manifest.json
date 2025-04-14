@@ -1,13 +1,14 @@
 {
   "files": {
     "main.css": "/siteAppleGit/static/css/main.bd935bc0.css",
-    "main.js": "/siteAppleGit/static/js/main.b93da76c.js",
+    "main.js": "/siteAppleGit/static/js/main.e8cac021.js",
     "static/media/macbook.svg": "/siteAppleGit/static/media/macbook.0d703c8d76783b131cc3507d1a55fee1.svg",
     "static/media/macpro.jpeg": "/siteAppleGit/static/media/macpro.61642063736b7b077dc5.jpeg",
     "static/media/myriadproblack.otf": "/siteAppleGit/static/media/myriadproblack.e730e1b19ca276c646dc.otf",
     "static/media/myriadprobold.ttf": "/siteAppleGit/static/media/myriadprobold.ba6deb5147fa6e225f9b.ttf",
     "static/media/myriadproregular.ttf": "/siteAppleGit/static/media/myriadproregular.c59859cec849233be7f8.ttf",
     "static/media/myriadprolight.otf": "/siteAppleGit/static/media/myriadprolight.b0bb7658963c5d720ddd.otf",
+    "static/media/macBookImage.png": "/siteAppleGit/static/media/macBookImage.cddf1bdebcd9d50c4e8a.png",
     "static/media/macShop.svg": "/siteAppleGit/static/media/macShop.d6551e5742eaef6223f4c908a9bc68ac.svg",
     "static/media/macbookPro.svg": "/siteAppleGit/static/media/macbookPro.1ade4ac6bb09c74c963b5ec153f510d6.svg",
     "static/media/macOs.svg": "/siteAppleGit/static/media/macOs.2a925b7f9323693f5877136940714a2a.svg",
@@ -21,10 +22,10 @@
     "static/media/macStudio.svg": "/siteAppleGit/static/media/macStudio.b1dc1177c7e1883cd2a19aaed3cfa5d9.svg",
     "static/media/macMini.svg": "/siteAppleGit/static/media/macMini.5d22d5c40ff1a70c6dd4080d064a4ddb.svg",
     "main.bd935bc0.css.map": "/siteAppleGit/static/css/main.bd935bc0.css.map",
-    "main.b93da76c.js.map": "/siteAppleGit/static/js/main.b93da76c.js.map"
+    "main.e8cac021.js.map": "/siteAppleGit/static/js/main.e8cac021.js.map"
   },
   "entrypoints": [
     "static/css/main.bd935bc0.css",
-    "static/js/main.b93da76c.js"
+    "static/js/main.e8cac021.js"
   ]
 }
